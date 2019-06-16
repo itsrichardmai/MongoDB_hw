@@ -9,7 +9,7 @@ const path = require("path");
 // -----------------------------
 var db = require("./models");
 
-var PORT = 4000;
+var PORT = process.env.PORT || 8080;
 
 var app = express();
 // Set Handlebars
